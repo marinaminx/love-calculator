@@ -4,11 +4,20 @@ const searching = '.';
 const numberOfRepetitions = 7;
 
 const calculate = () => {
-    console.log(calculating);
+    const target = document.getElementById('container');
+
+    let element = document.createElement('p');
+    element.innerText = calculating;
+    target.appendChild(element);
+
     for (let i = 0; i < numberOfRepetitions; i++) {
-        console.log(searching);
+        let element = document.createElement('p');
+        element.innerText = searching;
+        target.appendChild(element);
     }
-    console.log(result);
+    let element2 = document.createElement('p');
+    element2.innerText = result;
+    target.appendChild(element2);
 }
 
 window.onload = function() {
