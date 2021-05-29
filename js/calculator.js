@@ -10,3 +10,11 @@ const calculate = () => {
     }
     console.log(result);
 }
+
+window.onload = function() {
+    const button = document.getElementById('calculate-button');
+
+    button.addEventListener('click', function() {
+        calculate();
+    }, false);
+};
